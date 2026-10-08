@@ -1,0 +1,485 @@
+:root {
+  --bg-black: #060608;
+  --bg-card: #0d0d12;
+  --gold-primary: #d4af37;
+  --gold-light: #f7e7a1;
+  --gold-dark: #aa820a;
+  --text-main: #f0f0f5;
+  --text-muted: #b3b3c2;
+  --font-title: 'Cinzel', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  line-height: 1.7;
+  background-color: var(--bg-black);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header & Navegação */
+.topo {
+  background-color: rgba(6, 6, 8, 0.98);
+  border-bottom: 2px solid var(--gold-primary);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.08);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--gold-primary);
+}
+
+.btn-contato {
+  background: transparent;
+  color: var(--gold-primary) !important;
+  padding: 6px 16px;
+  border-radius: 25px;
+  border: 1px solid var(--gold-primary);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-contato:hover {
+  background: var(--gold-primary);
+  color: var(--bg-black) !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+/* Hero Section */
+.hero {
+  padding: 50px 0 30px;
+  text-align: center;
+  background: radial-gradient(circle at center, #18150d 0%, var(--bg-black) 75%);
+}
+
+.hero-simbolo-topo {
+  font-size: 3rem;
+  color: var(--gold-primary);
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  display: block;
+  font-family: var(--font-title);
+  color: var(--gold-primary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Seções Principais */
+.secao {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.secao h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--gold-primary);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.sub-secao {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+/* Abas das Categorias */
+.abas-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.aba-btn {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--gold-primary);
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.aba-btn:hover, .aba-btn.active {
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+  color: #000000;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+/* Pesquisa "O que Busca?" */
+.busca-container {
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+.busca-box {
+  display: flex;
+  align-items: center;
+  background-color: #111116;
+  border: 2px solid var(--gold-primary);
+  border-radius: 30px;
+  padding: 8px 18px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.lupa-icone {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  color: var(--gold-primary);
+}
+
+.busca-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+/* Conteúdo Rituais & Cards */
+.conteudo-aba {
+  display: none;
+}
+
+.conteudo-aba.active {
+  display: block;
+}
+
+.grid-rituais {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-ritual {
+  background-color: var(--bg-card);
+  border: 2px solid var(--gold-primary);
+  border-radius: 12px;
+  padding: 22px 18px;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-ritual:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: var(--gold-primary);
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px var(--gold-primary);
+}
+
+.card-ritual h3 {
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.tipo-ritual {
+  color: var(--gold-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.desc-ritual {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.btn-card {
+  background-color: transparent;
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-primary);
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: var(--font-title);
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+  background-color: var(--gold-primary);
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Seção Sobre Mim */
+.sobre-mim-secao {
+  background-color: #030304;
+}
+
+.caixa-dourada {
+  background-color: var(--bg-card);
+  border: 2px solid var(--gold-primary);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.sobre-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.sobre-foto-box {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-belayma {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.sobre-conteudo {
+  flex: 2;
+  min-width: 260px;
+}
+
+.subtitulo-sobre {
+  color: var(--gold-primary);
+  font-family: var(--font-title);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sobre-conteudo h2, .consulta-conteudo h2 {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.sobre-conteudo p, .consulta-conteudo p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.frase-destaque {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--gold-primary);
+  font-family: var(--font-title);
+  font-style: italic;
+  font-size: 0.98rem;
+}
+
+/* Seção Consulta Reservada */
+.consulta-secao {
+  background-color: var(--bg-black);
+}
+
+.consulta-container {
+  text-align: center;
+  max-width: 800px;
+}
+
+.consulta-btn-wrapper {
+  margin-top: 25px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+  color: #000000;
+  font-family: var(--font-title);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #030304;
+  border-top: 2px solid var(--gold-primary);
+  text-align: center;
+  padding: 25px 0;
+}
+
+.footer-brand {
+  font-family: var(--font-title);
+  color: var(--gold-primary);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.footer-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Regras de Responsividade para Celular */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .logo-img {
+    height: 32px;
+  }
+
+  .menu {
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 0.85rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-ritual {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-conteudo h2 {
+    text-align: center;
+  }
+
+  .caixa-dourada {
+    padding: 20px;
+  }
+}

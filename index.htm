@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacerdotisa Belayma | Alta Magia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu / Cabeçalho -->
+  <header class="topo">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="assets/sigilo.png" alt="" class="logo-img">
+        <span>Belayma</span>
+      </a>
+      <nav class="menu">
+        <a href="#home">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#consulta" class="btn-contato">Consulta Reservada</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-simbolo-topo">✦</div>
+      <span class="subtitulo">Alta Magia & Operações Ritualísticas</span>
+      <h1>Sacerdotisa Belayma</h1>
+      <p>Orientação espiritual, rituais sagrados e transformação conduzida sob as egrégoras da Alta Magia com sigilo e fundamentação.</p>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section id="categorias" class="secao categorias-topo">
+    <div class="container">
+      <h2>Categorias & Rituais</h2>
+      <p class="sub-secao">Selecione uma área para conhecer a atuação e o funcionamento de cada ritual</p>
+      
+      <!-- Botões de Navegação por Abas -->
+      <div class="abas-container">
+        <button class="aba-btn active" onclick="abrirCategoria(event, 'prosperidade')">Prosperidade</button>
+        <button class="aba-btn" onclick="abrirCategoria(event, 'amor')">Amor</button>
+        <button class="aba-btn" onclick="abrirCategoria(event, 'saude')">Saúde</button>
+        <button class="aba-btn" onclick="abrirCategoria(event, 'protecao')">Proteção</button>
+        <button class="aba-btn" onclick="abrirCategoria(event, 'oraculos')">Oráculos</button>
+      </div>
+
+      <!-- Barra de Pesquisa Rápida -->
+      <div class="busca-container">
+        <div class="busca-box">
+          <span class="lupa-icone">&#128269;</span>
+          <input type="text" placeholder="O que Busca? (ex: Amarração, Limpeza, Tarô...)" id="input-busca" onkeyup="filtrarRituais()">
+        </div>
+      </div>
+
+      <!-- Grade de Conteúdo dos Rituais -->
+      <div class="lista-rituais">
+
+        <!-- ABA PROSPERIDADE -->
+        <div id="prosperidade" class="conteudo-aba active">
+          <div class="grid-rituais">
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Destrava Caminhos</h3>
+              <p class="tipo-ritual">Abertura de Caminhos</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Rompe bloqueios energéticos e amarras espirituais que travam sua vida financeira e pessoal, permitindo que novas oportunidades fluam sem impedimentos.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Fonte Da Abundância</h3>
+              <p class="tipo-ritual">Prosperidade & Fartura</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Alinha sua frequência vibracional com a egrégora do ganho material e da fartura, atraindo circulação de dinheiro e prosperidade contínua.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Caminho Da Oportunidade Profissional</h3>
+              <p class="tipo-ritual">Emprego & Carreira</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Atua no direcionamento de carreira e recolocação no mercado, elevando sua aceitação e destaque em entrevistas e seleções de trabalho.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Coroa Do Empreendedor</h3>
+              <p class="tipo-ritual">Expansão de Negócios</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Consagração voltada para empresas e empreendimentos. Atraí fluxo constante de clientes, melhora o faturamento e fortalece sua autoridade comercial.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA AMOR -->
+        <div id="amor" class="conteudo-aba">
+          <div class="grid-rituais">
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Laço De Vênus</h3>
+              <p class="tipo-ritual">Amarração Amorosa</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> União ritualística focada em entrelaçar o campo afetivo e espiritual de duas pessoas, gerando um vínculo de ligação profundo e duradouro.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Chama Reacesa</h3>
+              <p class="tipo-ritual">Reconciliação Amorosa</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Dissipa ressentimentos, quebra o orgulho e suaviza conflitos passados, abrindo portas para o retorno do contato e a reconstrução do casal.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Essência Magnética</h3>
+              <p class="tipo-ritual">Magnetismo & Empoderamento</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Expande sua aura de sedução e poder pessoal, tornando sua presença marcante, atraente e desejada em qualquer ambiente.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Coração Adoçado</h3>
+              <p class="tipo-ritual">Adoçamento</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Acalma comportamentos agressivos ou distantes, trazendo carinho, compreensão, paciência e harmonia para o relacionamento.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Alquimia Da Luxúria</h3>
+              <p class="tipo-ritual">Luxúria & Atração Sexual</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Desperta desejos ardentes e a atração física incontrolável, reavivando a paixão e a química na intimidade.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Aos Meus Pés</h3>
+              <p class="tipo-ritual">Domínio & Atenção</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Direciona o foco do alvo para você, gerando constante necessidade de busca, submissão afetiva e desejo de estar ao seu lado.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Pensamento Obsessivo</h3>
+              <p class="tipo-ritual">Vira Pensamentos</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Atua diretamente no plano mental da pessoa, fazendo com que a sua imagem e memórias permaneçam de forma recorrente em sua mente.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA SAÚDE -->
+        <div id="saude" class="conteudo-aba">
+          <div class="grid-rituais">
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Cura E Equilíbrio</h3>
+              <p class="tipo-ritual">Cura Física</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Alinhamento energético complementar para restaurar o campo vibracional do corpo físico, auxiliando na recuperação e vitalidade celular.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Clareza Mental</h3>
+              <p class="tipo-ritual">Cura Mental</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Limpeza de poluição psíquica, ansiedade e confusão mental, proporcionando discernimento, tranquilidade e raciocínio firme.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Libertação Emocional</h3>
+              <p class="tipo-ritual">Cura Emocional & Vícios</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Quebra de padrões compulsivos, cordões doentios de dependência e traumas antigos, promovendo o desligamento de vícios e dores do passado.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Força Vital</h3>
+              <p class="tipo-ritual">Vitalidade & Saúde</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Recarga energética profunda contra desânimo e esgotamento espiritual, trazendo disposição, vigor e renovação da força pessoal.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA PROTEÇÃO -->
+        <div id="protecao" class="conteudo-aba">
+          <div class="grid-rituais">
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Armadura Espiritual</h3>
+              <p class="tipo-ritual">Proteção Pessoal</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Fechamento de corpo e blindagem do campo aurico contra ataques espirituais, inveja, olho gordo e vampirismo energético.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Casa Blindada</h3>
+              <p class="tipo-ritual">Proteção de Ambientes</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Consagração de residências ou estabelecimentos comerciais para neutralizar larvas astrais e afastar presenças indesejadas.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Limpeza E Banimento</h3>
+              <p class="tipo-ritual">Purificação Espiritual</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Expulsão de cargas pesadas, espíritos obsessores e miasmas impregnados no seu campo magnético.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Quebra De Amarração</h3>
+              <p class="tipo-ritual">Quebra de Feitiços & Demandas</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Neutraliza e destrói qualquer feitiço, demanda enviados ou amarrações feitas contra você, restaurando sua livre autonomia.</p>
+              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA ORÁCULOS -->
+        <div id="oraculos" class="conteudo-aba">
+          <div class="grid-rituais">
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Consulta Tarô</h3>
+              <p class="tipo-ritual">Oráculo Arcano</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Mapeamento profundo dos caminhos, revelando intenções escondidas, tendências do futuro e orientações claras da Alta Magia.</p>
+              <a href="#consulta" class="btn-card">Agendar Consulta</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Consulta Baralho Cigano</h3>
+              <p class="tipo-ritual">Oráculo Prático</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Leitura objetiva direcionada para questões do dia a dia, vida amorosa, finanças e tomada de decisões imediatas.</p>
+              <a href="#consulta" class="btn-card">Agendar Consulta</a>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-icon">✦</div>
+              <h3>Consulta Pêndulo</h3>
+              <p class="tipo-ritual">Radiestesia & Diagnóstico</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Investigação energética direta para confirmações precisas (Sim/Não) e medição da saúde dos chakras.</p>
+              <a href="#consulta" class="btn-card">Agendar Consulta</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre-mim" class="secao sobre-mim-secao">
+    <div class="container caixa-dourada sobre-container">
+      <div class="sobre-foto-box">
+        <img src="assets/belayma.jpeg" alt="Sacerdotisa Belayma" class="foto-belayma img-1x1">
+      </div>
+      <div class="sobre-conteudo">
+        <span class="subtitulo-sobre">✦ BELAYMA</span>
+        <h2>Sacerdotisa • Ocultista • Operadora Ritualística</h2>
+        <p>Belayma é Sacerdotisa de Alta Magia dedicada ao Rei Belial, iniciada no Luciferianismo e praticante de Demonolatria e Bruxaria.</p>
+        <p>Sua prática é fundamentada em estudo, disciplina, espiritualidade e experiência ritualística, unindo conhecimentos de Alta Magia, Bruxaria, Demonolatria, Luciferianismo, magia natural e sistemas de divinação.</p>
+        <p>Realiza trabalhos voltados para amor, prosperidade, proteção, abertura de caminhos, limpeza, banimento, magnetismo, empoderamento e transformação.</p>
+        <p>Cada ritual é conduzido com intenção, propósito e respeito às tradições mágicas, buscando proporcionar uma experiência séria, personalizada e coerente com a finalidade de cada trabalho.</p>
+        <div class="frase-destaque">
+          "Conhecimento é poder. Intenção é direção. A magia é transformação."
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Consulta Reservada (Exclusiva) -->
+  <section id="consulta" class="secao consulta-secao">
+    <div class="container caixa-dourada consulta-container">
+      <div class="consulta-conteudo">
+        <span class="subtitulo-sobre">✦ ATENDIMENTO EXCLUSIVO</span>
+        <h2>Agende sua Consulta Espiritual</h2>
+        <p>As consultas e agendamentos de rituais são realizados com total sigilo, privacidade e dedicação individualizada.</p>
+        <p>Clique no botão abaixo para ser direcionado(a) diretamente ao atendimento via WhatsApp para verificar horários disponíveis e valores.</p>
+        
+        <div class="consulta-btn-wrapper">
+          <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20reservada." target="_blank" class="btn-whatsapp">
+            ✦ Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p class="footer-brand">Sacerdotisa Belayma — Alta Magia</p>
+      <p class="footer-sub">&copy; 2026 Todos os direitos reservados. Atendimento estritamente confidencial.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
