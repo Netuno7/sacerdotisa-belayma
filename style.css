@@ -261,6 +261,28 @@ body {
   box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
 }
 
+/* Estilo para as fotos dos anúncios/rituais */
+.card-img-box {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--gold-primary);
+  background-color: #030304;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-ritual:hover .card-img {
+  transform: scale(1.05);
+}
+
 .card-icon {
   font-size: 2rem;
   color: var(--gold-primary);
