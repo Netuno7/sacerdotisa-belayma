@@ -504,4 +504,13 @@ body {
   .caixa-dourada {
     padding: 20px;
   }
+
+  .preco-ritual {
+  color: var(--gold-primary);
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 }
