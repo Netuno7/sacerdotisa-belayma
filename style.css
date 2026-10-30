@@ -549,4 +549,26 @@ body {
   margin-top: auto;
 }
 
+/* Forçar proporção 1x1 em todas as fotos dos anúncios/rituais */
+.card-img-box {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Garante o formato quadrado perfeito 1x1 */
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--gold-primary);
+  background-color: #030304;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche o quadrado sem distorcer a foto */
+  transition: transform 0.3s ease;
+}
+
+.card-ritual:hover .card-img {
+  transform: scale(1.05);
+}
+
 }
