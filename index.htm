@@ -20,7 +20,7 @@
       </a>
       <nav class="menu">
         <a href="#home">Início</a>
-        <a href="#categorias">Categorias</a>
+        <a href="#categorias">Categorias & Depoimentos</a>
         <a href="#sobre-mim">Sobre Mim</a>
         <a href="#consulta" class="btn-contato">Consulta Reservada</a>
       </nav>
@@ -41,15 +41,16 @@
   <section id="categorias" class="secao categorias-topo">
     <div class="container">
       <h2>Categorias & Rituais</h2>
-      <p class="sub-secao">Selecione uma área para conhecer a atuação e o funcionamento de cada ritual</p>
+      <p class="sub-secao">Selecione uma área para conhecer a atuação, os valores ou ver os depoimentos</p>
       
-      <!-- Botões de Navegação por Abas -->
+      <!-- Botões de Navegação por Abas (Com Depoimentos incluído) -->
       <div class="abas-container">
         <button class="aba-btn active" onclick="abrirCategoria(event, 'prosperidade')">Prosperidade</button>
         <button class="aba-btn" onclick="abrirCategoria(event, 'amor')">Amor</button>
         <button class="aba-btn" onclick="abrirCategoria(event, 'saude')">Saúde</button>
         <button class="aba-btn" onclick="abrirCategoria(event, 'protecao')">Proteção</button>
         <button class="aba-btn" onclick="abrirCategoria(event, 'oraculos')">Oráculos</button>
+        <button class="aba-btn" onclick="abrirCategoria(event, 'depoimentos')">✦ Depoimentos</button>
       </div>
 
       <!-- Barra de Pesquisa Rápida -->
@@ -71,44 +72,44 @@
               <div class="card-img-box">
                 <img src="assets/destrava-caminhos.png" alt="Destrava Caminhos" class="card-img">
               </div>
-              <h3>Destrava Caminhos</h3>
+              <h3 class="nome-ritual">Destrava Caminhos</h3>
               <p class="tipo-ritual">Abertura de Caminhos</p>
               <p class="preco-ritual">R$ 900,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Rompe bloqueios energéticos e amarras espirituais que travam sua vida financeira e pessoal, permitindo que novas oportunidades fluam sem impedimentos.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/fonte-da-abundancia.png" alt="Fonte Da Abundância" class="card-img">
               </div>
-              <h3>Fonte Da Abundância</h3>
+              <h3 class="nome-ritual">Fonte Da Abundância</h3>
               <p class="tipo-ritual">Prosperidade & Fartura</p>
               <p class="preco-ritual">R$ 999,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Alinha sua frequência vibracional com a egrégora do ganho material e da fartura, atraindo circulação de dinheiro e prosperidade contínua.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/caminhos-da-oportunidade.png" alt="Caminho Da Oportunidade" class="card-img">
               </div>
-              <h3>Caminho Da Oportunidade</h3>
+              <h3 class="nome-ritual">Caminho Da Oportunidade</h3>
               <p class="tipo-ritual">Emprego & Carreira</p>
               <p class="preco-ritual">R$ 800,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Atua no direcionamento de carreira e recolocação no mercado, elevando sua aceitação e destaque em entrevistas e seleções de trabalho.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/coroa-empreendedor.png" alt="Coroa Do Empreendedor" class="card-img">
               </div>
-              <h3>Coroa Do Empreendedor</h3>
+              <h3 class="nome-ritual">Coroa Do Empreendedor</h3>
               <p class="tipo-ritual">Expansão de Negócios</p>
               <p class="preco-ritual">R$ 999,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Consagração voltada para empresas e empreendimentos. Atraí fluxo constante de clientes, melhora o faturamento e fortalece sua autoridade comercial.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
           </div>
@@ -122,77 +123,77 @@
               <div class="card-img-box">
                 <img src="assets/lacos-de-venus.png" alt="Laço De Vênus" class="card-img">
               </div>
-              <h3>Laço De Vênus</h3>
+              <h3 class="nome-ritual">Laço De Vênus</h3>
               <p class="tipo-ritual">Amarração Amorosa</p>
               <p class="preco-ritual">R$ 1.200,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> União ritualística focada em entrelaçar o campo afetivo e espiritual de duas pessoas, gerando um vínculo de ligação profundo e duradouro.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/chama-reacesa.png" alt="Chama Reacesa" class="card-img">
               </div>
-              <h3>Chama Reacesa</h3>
+              <h3 class="nome-ritual">Chama Reacesa</h3>
               <p class="tipo-ritual">Reconciliação Amorosa</p>
               <p class="preco-ritual">R$ 900,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Dissipa ressentimentos, quebra o orgulho e suaviza conflitos passados, abrindo portas para o retorno do contato e a reconstrução do casal.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/essencia-magnetica.png" alt="Essência Magnética" class="card-img">
               </div>
-              <h3>Essência Magnética</h3>
+              <h3 class="nome-ritual">Essência Magnética</h3>
               <p class="tipo-ritual">Magnetismo & Empoderamento</p>
               <p class="preco-ritual">R$ 800,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Expande sua aura de sedução e poder pessoal, tornando sua presença marcante, atraente e desejada em qualquer ambiente.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/coracao-adocado.png" alt="Coração Adoçado" class="card-img">
               </div>
-              <h3>Coração Adoçado</h3>
+              <h3 class="nome-ritual">Coração Adoçado</h3>
               <p class="tipo-ritual">Adoçamento</p>
               <p class="preco-ritual">R$ 950,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Acalma comportamentos agressivos ou distantes, trazendo carinho, compreensão, paciência e harmonia para o relacionamento.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/alquimia-da-luxuria.png" alt="Alquimia Da Luxúria" class="card-img">
               </div>
-              <h3>Alquimia Da Luxúria</h3>
+              <h3 class="nome-ritual">Alquimia Da Luxúria</h3>
               <p class="tipo-ritual">Luxúria & Atração Sexual</p>
               <p class="preco-ritual">R$ 999,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Desperta desejos ardentes e a atração física incontrolável, reavivando a paixão e a química na intimidade.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/chora-nos-meus-pes.png" alt="Aos Meus Pés" class="card-img">
               </div>
-              <h3>Aos Meus Pés</h3>
+              <h3 class="nome-ritual">Aos Meus Pés</h3>
               <p class="tipo-ritual">Domínio & Atenção</p>
               <p class="preco-ritual">R$ 999,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Direciona o foco do alvo para você, gerando constante necessidade de busca, submissão afetiva e desejo de estar ao seu lado.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/pensamento-obsessivo.png" alt="Pensamento Obsessivo" class="card-img">
               </div>
-              <h3>Pensamento Obsessivo</h3>
+              <h3 class="nome-ritual">Pensamento Obsessivo</h3>
               <p class="tipo-ritual">Vira Pensamentos</p>
               <p class="preco-ritual">R$ 999,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Atua diretamente no plano mental da pessoa, fazendo com que a sua imagem e memórias permaneçam de forma recorrente em sua mente.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
           </div>
@@ -206,44 +207,44 @@
               <div class="card-img-box">
                 <img src="assets/cura-e-equilibrio.png" alt="Cura E Equilíbrio" class="card-img">
               </div>
-              <h3>Cura E Equilíbrio</h3>
+              <h3 class="nome-ritual">Cura E Equilíbrio</h3>
               <p class="tipo-ritual">Cura Física</p>
               <p class="preco-ritual">R$ 900,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Alinhamento energético complementar para restaurar o campo vibracional do corpo físico, auxiliando na recuperação e vitalidade celular.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/clareza-mental.png" alt="Clareza Mental" class="card-img">
               </div>
-              <h3>Clareza Mental</h3>
+              <h3 class="nome-ritual">Clareza Mental</h3>
               <p class="tipo-ritual">Cura Mental</p>
               <p class="preco-ritual">R$ 950,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Limpeza de poluição psíquica, ansiedade e confusão mental, proporcionando discernimento, tranquilidade e raciocínio firme.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/libertacao-emocional.png" alt="Libertação Emocional" class="card-img">
               </div>
-              <h3>Libertação Emocional</h3>
+              <h3 class="nome-ritual">Libertação Emocional</h3>
               <p class="tipo-ritual">Cura Emocional & Vícios</p>
               <p class="preco-ritual">R$ 999,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Quebra de padrões compulsivos, cordões doentios de dependência e traumas antigos, promovendo o desligamento de vícios e dores do passado.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/forca-vital.png" alt="Força Vital" class="card-img">
               </div>
-              <h3>Força Vital</h3>
+              <h3 class="nome-ritual">Força Vital</h3>
               <p class="tipo-ritual">Vitalidade & Saúde</p>
               <p class="preco-ritual">R$ 1.200,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Recarga energética profunda contra desânimo e esgotamento espiritual, trazendo disposição, vigor e renovação da força pessoal.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
           </div>
@@ -257,44 +258,44 @@
               <div class="card-img-box">
                 <img src="assets/armadura-espiritual.png" alt="Armadura Espiritual" class="card-img">
               </div>
-              <h3>Armadura Espiritual</h3>
+              <h3 class="nome-ritual">Armadura Espiritual</h3>
               <p class="tipo-ritual">Proteção Pessoal</p>
               <p class="preco-ritual">R$ 900,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Fechamento de corpo e blindagem do campo aurico contra ataques espirituais, inveja, olho gordo e vampirismo energético.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/casa-blindada.png" alt="Casa Blindada" class="card-img">
               </div>
-              <h3>Casa Blindada</h3>
+              <h3 class="nome-ritual">Casa Blindada</h3>
               <p class="tipo-ritual">Proteção de Ambientes</p>
               <p class="preco-ritual">R$ 800,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Consagração de residências ou estabelecimentos comerciais para neutralizar larvas astrais e afastar presenças indesejadas.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/limpeza-banimento.png" alt="Limpeza E Banimento" class="card-img">
               </div>
-              <h3>Limpeza E Banimento</h3>
+              <h3 class="nome-ritual">Limpeza E Banimento</h3>
               <p class="tipo-ritual">Purificação Espiritual</p>
               <p class="preco-ritual">R$ 900,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Expulsão de cargas pesadas, espíritos obsessores e miasmas impregnados no seu campo magnético.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/quebra-de-amarrar.png" alt="Quebra De Amarração" class="card-img">
               </div>
-              <h3>Quebra De Amarração</h3>
+              <h3 class="nome-ritual">Quebra De Amarração</h3>
               <p class="tipo-ritual">Quebra de Feitiços & Demandas</p>
               <p class="preco-ritual">R$ 999,00</p>
               <p class="desc-ritual"><strong>Como funciona:</strong> Neutraliza e destrói qualquer feitiço, demanda enviados ou amarrações feitas contra você, restaurando sua livre autonomia.</p>
-              <a href="#consulta" class="btn-card">Agendar Ritual</a>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Ritual</button>
             </div>
 
           </div>
@@ -308,54 +309,79 @@
               <div class="card-img-box">
                 <img src="assets/consulta-taro.png" alt="Consulta Tarô" class="card-img">
               </div>
-              <h3>Consulta Tarô</h3>
+              <h3 class="nome-ritual">Consulta Tarô</h3>
               <p class="tipo-ritual">Oráculo Arcano</p>
-              <p class="desc-ritual">
+              <div class="desc-ritual">
                 <strong>Opções e Valores[cite: 4]:</strong><br>
-                • 1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]<br>
-                • 3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]<br>
-                • 7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]<br>
-                • Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]<br>
-                • Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]<br>
-                • Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]
-              </p>
-              <a href="#consulta" class="btn-card">Agendar Consulta</a>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', '1 Pergunta', 'R$ 30,00'); return false;" class="link-opcao">1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', '3 Perguntas', 'R$ 60,00'); return false;" class="link-opcao">3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', '7 Perguntas', 'R$ 100,00'); return false;" class="link-opcao">7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', 'Consulta Completa', 'R$ 200,00'); return false;" class="link-opcao">Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', 'Vídeo Chamada', 'R$ 250,00'); return false;" class="link-opcao">Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', 'Canalizada Rei Belial', 'R$ 333,00'); return false;" class="link-opcao">Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]</a>
+              </div>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/consulta-baralho-cigano.png" alt="Consulta Baralho Cigano" class="card-img">
               </div>
-              <h3>Consulta Baralho Cigano</h3>
+              <h3 class="nome-ritual">Consulta Baralho Cigano</h3>
               <p class="tipo-ritual">Oráculo Prático</p>
-              <p class="desc-ritual">
+              <div class="desc-ritual">
                 <strong>Opções e Valores[cite: 4]:</strong><br>
-                • 1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]<br>
-                • 3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]<br>
-                • 7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]<br>
-                • Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]<br>
-                • Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]<br>
-                • Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]
-              </p>
-              <a href="#consulta" class="btn-card">Agendar Consulta</a>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', '1 Pergunta', 'R$ 30,00'); return false;" class="link-opcao">1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', '3 Perguntas', 'R$ 60,00'); return false;" class="link-opcao">3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', '7 Perguntas', 'R$ 100,00'); return false;" class="link-opcao">7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', 'Consulta Completa', 'R$ 200,00'); return false;" class="link-opcao">Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', 'Vídeo Chamada', 'R$ 250,00'); return false;" class="link-opcao">Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', 'Canalizada Rei Belial', 'R$ 333,00'); return false;" class="link-opcao">Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]</a>
+              </div>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
                 <img src="assets/consulta-pendulo.png" alt="Consulta Pêndulo" class="card-img">
               </div>
-              <h3>Consulta Pêndulo</h3>
+              <h3 class="nome-ritual">Consulta Pêndulo</h3>
               <p class="tipo-ritual">Radiestesia & Diagnóstico</p>
-              <p class="desc-ritual">
+              <div class="desc-ritual">
                 <strong>Opções e Valores[cite: 4]:</strong><br>
-                • 1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]<br>
-                • 3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]<br>
-                • 7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]<br>
-                • Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]<br>
-                • Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]<br>
-                • Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]
-              </p>
-              <a href="#consulta" class="btn-card">Agendar Consulta</a>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', '1 Pergunta', 'R$ 30,00'); return false;" class="link-opcao">1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', '3 Perguntas', 'R$ 60,00'); return false;" class="link-opcao">3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', '7 Perguntas', 'R$ 100,00'); return false;" class="link-opcao">7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', 'Consulta Completa', 'R$ 200,00'); return false;" class="link-opcao">Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', 'Vídeo Chamada', 'R$ 250,00'); return false;" class="link-opcao">Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]</a><br>
+                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', 'Canalizada Rei Belial', 'R$ 333,00'); return false;" class="link-opcao">Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]</a>
+              </div>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ABA DEPOIMENTOS -->
+        <div id="depoimentos" class="conteudo-aba">
+          <div class="grid-rituais">
+            
+            <div class="card-depoimento">
+              <div class="card-icon">✦</div>
+              <p class="texto-depoimento">"A consulta com a Sacerdotisa Belayma mudou completamente minha perspectiva. A precisão nas respostas e a seriedade no atendimento são impressionantes. Recomendo de olhos fechados!"</p>
+              <p class="autor-depoimento">— M. S. (São Paulo - SP)</p>
+            </div>
+
+            <div class="card-depoimento">
+              <div class="card-icon">✦</div>
+              <p class="texto-depoimento">"Fiz o ritual de abertura de caminhos e em poucas semanas as oportunidades financeiras começaram a surgir de forma clara. Profissional ímpar e muito respeitosa."</p>
+              <p class="autor-depoimento">— R. L. (Curitiba - PR)</p>
+            </div>
+
+            <div class="card-depoimento">
+              <div class="card-icon">✦</div>
+              <p class="texto-depoimento">"O atendimento é de uma energia indescritível. Sigilo absoluto e muita firmeza nas orientações. Sou cliente fiel e sempre busco direcionamento aqui."</p>
+              <p class="autor-depoimento">— C. A. (Florianópolis - SC)</p>
             </div>
 
           </div>
@@ -406,7 +432,7 @@
   <!-- Rodapé -->
   <footer class="rodape">
     <div class="container">
-        <p class="footer-brand">Sacerdotisa Belayma — Alta Magia</p>
+      <p class="footer-brand">Sacerdotisa Belayma — Alta Magia</p>
       <p class="footer-sub">&copy; 2026 Todos os direitos reservados. Atendimento estritamente confidencial.</p>
     </div>
   </footer>

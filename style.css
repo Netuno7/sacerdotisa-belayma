@@ -513,4 +513,40 @@ body {
   margin-bottom: 12px;
 }
 
+/* Estilo para os Cards de Depoimentos */
+.card-depoimento {
+  background-color: var(--bg-card);
+  border: 2px solid var(--gold-primary);
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 320px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-depoimento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+}
+
+.texto-depoimento {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.autor-depoimento {
+  font-family: var(--font-title);
+  color: var(--gold-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: auto;
+}
+
 }
