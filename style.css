@@ -261,10 +261,10 @@ body {
   box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
 }
 
-/* Estilo para as fotos dos anúncios/rituais */
+/* Imagens em Proporção 1x1 Quadrada */
 .card-img-box {
   width: 100%;
-  height: 160px;
+  aspect-ratio: 1 / 1;
   margin-bottom: 15px;
   border-radius: 8px;
   overflow: hidden;
@@ -303,7 +303,15 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+}
+
+.preco-ritual {
+  color: var(--gold-primary);
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .desc-ritual {
@@ -323,6 +331,7 @@ body {
   font-size: 0.8rem;
   font-family: var(--font-title);
   margin-top: auto;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -504,71 +513,4 @@ body {
   .caixa-dourada {
     padding: 20px;
   }
-
-  .preco-ritual {
-  color: var(--gold-primary);
-  font-family: var(--font-title);
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-/* Estilo para os Cards de Depoimentos */
-.card-depoimento {
-  background-color: var(--bg-card);
-  border: 2px solid var(--gold-primary);
-  border-radius: 12px;
-  padding: 25px 20px;
-  width: 320px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.card-depoimento:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
-}
-
-.texto-depoimento {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  font-style: italic;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.autor-depoimento {
-  font-family: var(--font-title);
-  color: var(--gold-primary);
-  font-size: 0.85rem;
-  font-weight: 700;
-  margin-top: auto;
-}
-
-/* Forçar proporção 1x1 em todas as fotos dos anúncios/rituais */
-.card-img-box {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Garante o formato quadrado perfeito 1x1 */
-  margin-bottom: 15px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--gold-primary);
-  background-color: #030304;
-}
-
-.card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Preenche o quadrado sem distorcer a foto */
-  transition: transform 0.3s ease;
-}
-
-.card-ritual:hover .card-img {
-  transform: scale(1.05);
-}
-
 }

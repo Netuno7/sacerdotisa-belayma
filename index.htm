@@ -43,7 +43,7 @@
       <h2>Categorias & Rituais</h2>
       <p class="sub-secao">Selecione uma área para conhecer a atuação, os valores ou ver os depoimentos</p>
       
-      <!-- Botões de Navegação por Abas (Com Depoimentos incluído) -->
+      <!-- Botões de Navegação por Abas -->
       <div class="abas-container">
         <button class="aba-btn active" onclick="abrirCategoria(event, 'prosperidade')">Prosperidade</button>
         <button class="aba-btn" onclick="abrirCategoria(event, 'amor')">Amor</button>
@@ -307,55 +307,67 @@
             
             <div class="card-ritual">
               <div class="card-img-box">
-                <img src="assets/consulta-taro.png" alt="Consulta Tarô" class="card-img">
+                <img src="assets/1.png" alt="1 Pergunta" class="card-img">
               </div>
-              <h3 class="nome-ritual">Consulta Tarô</h3>
-              <p class="tipo-ritual">Oráculo Arcano</p>
-              <div class="desc-ritual">
-                <strong>Opções e Valores[cite: 4]:</strong><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', '1 Pergunta', 'R$ 30,00'); return false;" class="link-opcao">1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', '3 Perguntas', 'R$ 60,00'); return false;" class="link-opcao">3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', '7 Perguntas', 'R$ 100,00'); return false;" class="link-opcao">7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', 'Consulta Completa', 'R$ 200,00'); return false;" class="link-opcao">Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', 'Vídeo Chamada', 'R$ 250,00'); return false;" class="link-opcao">Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Tarô', 'Canalizada Rei Belial', 'R$ 333,00'); return false;" class="link-opcao">Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]</a>
-              </div>
+              <h3 class="nome-ritual">1 Pergunta</h3>
+              <p class="tipo-ritual">Consulta Rápida</p>
+              <p class="preco-ritual">R$ 30,00[cite: 4]</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Resposta objetiva e direta para uma questão pontual do seu dia a dia ou momento atual[cite: 4].</p>
               <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
-                <img src="assets/consulta-baralho-cigano.png" alt="Consulta Baralho Cigano" class="card-img">
+                <img src="assets/2.png" alt="3 Perguntas" class="card-img">
               </div>
-              <h3 class="nome-ritual">Consulta Baralho Cigano</h3>
-              <p class="tipo-ritual">Oráculo Prático</p>
-              <div class="desc-ritual">
-                <strong>Opções e Valores[cite: 4]:</strong><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', '1 Pergunta', 'R$ 30,00'); return false;" class="link-opcao">1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', '3 Perguntas', 'R$ 60,00'); return false;" class="link-opcao">3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', '7 Perguntas', 'R$ 100,00'); return false;" class="link-opcao">7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', 'Consulta Completa', 'R$ 200,00'); return false;" class="link-opcao">Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', 'Vídeo Chamada', 'R$ 250,00'); return false;" class="link-opcao">Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Baralho Cigano', 'Canalizada Rei Belial', 'R$ 333,00'); return false;" class="link-opcao">Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]</a>
-              </div>
+              <h3 class="nome-ritual">3 Perguntas</h3>
+              <p class="tipo-ritual">Consulta Oracular</p>
+              <p class="preco-ritual">R$ 60,00[cite: 4]</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Maior clareza e profundidade para suas dúvidas, permitindo analisar diferentes aspectos da situação[cite: 4].</p>
               <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
             </div>
 
             <div class="card-ritual">
               <div class="card-img-box">
-                <img src="assets/consulta-pendulo.png" alt="Consulta Pêndulo" class="card-img">
+                <img src="assets/3.png" alt="7 Perguntas" class="card-img">
               </div>
-              <h3 class="nome-ritual">Consulta Pêndulo</h3>
-              <p class="tipo-ritual">Radiestesia & Diagnóstico</p>
-              <div class="desc-ritual">
-                <strong>Opções e Valores[cite: 4]:</strong><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', '1 Pergunta', 'R$ 30,00'); return false;" class="link-opcao">1 Pergunta: <strong>R$ 30,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', '3 Perguntas', 'R$ 60,00'); return false;" class="link-opcao">3 Perguntas: <strong>R$ 60,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', '7 Perguntas', 'R$ 100,00'); return false;" class="link-opcao">7 Perguntas: <strong>R$ 100,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', 'Consulta Completa', 'R$ 200,00'); return false;" class="link-opcao">Consulta Completa: <strong>R$ 200,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', 'Vídeo Chamada', 'R$ 250,00'); return false;" class="link-opcao">Vídeo Chamada: <strong>R$ 250,00</strong>[cite: 4]</a><br>
-                • <a href="#" onclick="agendarOpcaoOraculo('Consulta Pêndulo', 'Canalizada Rei Belial', 'R$ 333,00'); return false;" class="link-opcao">Canalizada Rei Belial: <strong>R$ 333,00</strong>[cite: 4]</a>
+              <h3 class="nome-ritual">7 Perguntas</h3>
+              <p class="tipo-ritual">Visão Ampla</p>
+              <p class="preco-ritual">R$ 100,00[cite: 4]</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Visão mais ampla e detalhada de toda a sua situação atual, caminhos e tendências futuras[cite: 4].</p>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-img-box">
+                <img src="assets/4.png" alt="Consulta Completa" class="card-img">
               </div>
+              <h3 class="nome-ritual">Consulta Completa</h3>
+              <p class="tipo-ritual">Por Áudio e Foto[cite: 4]</p>
+              <p class="preco-ritual">R$ 200,00[cite: 4]</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Análise profunda da sua vida com orientações detalhadas, enviada com áudio explicativo e foto da tiragem[cite: 4].</p>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-img-box">
+                <img src="assets/5.png" alt="Consulta por Vídeo Chamada" class="card-img">
+              </div>
+              <h3 class="nome-ritual">Consulta por Vídeo Chamada</h3>
+              <p class="tipo-ritual">Atendimento ao Vivo[cite: 4]</p>
+              <p class="preco-ritual">R$ 250,00[cite: 4]</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Atendimento ao vivo com análise completa, tiragem em tempo real e direcionamentos espirituais diretos[cite: 4].</p>
+              <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
+            </div>
+
+            <div class="card-ritual">
+              <div class="card-img-box">
+                <img src="assets/6.png" alt="Consulta Canalizada com Rei Belial" class="card-img">
+              </div>
+              <h3 class="nome-ritual">Consulta Canalizada com Rei Belial</h3>
+              <p class="tipo-ritual">Alta Magia[cite: 4]</p>
+              <p class="preco-ritual">R$ 333,00[cite: 4]</p>
+              <p class="desc-ritual"><strong>Como funciona:</strong> Mensagem canalizada diretamente do Rei Belial para você, com orientação e direcionamentos espirituais profundos[cite: 4].</p>
               <button onclick="agendarItem(this)" class="btn-card">Agendar Consulta</button>
             </div>
 
@@ -366,22 +378,28 @@
         <div id="depoimentos" class="conteudo-aba">
           <div class="grid-rituais">
             
-            <div class="card-depoimento">
+            <div class="card-ritual">
               <div class="card-icon">✦</div>
-              <p class="texto-depoimento">"A consulta com a Sacerdotisa Belayma mudou completamente minha perspectiva. A precisão nas respostas e a seriedade no atendimento são impressionantes. Recomendo de olhos fechados!"</p>
-              <p class="autor-depoimento">— M. S. (São Paulo - SP)</p>
+              <h3 class="nome-ritual">M. S.</h3>
+              <p class="tipo-ritual">São Paulo - SP</p>
+              <p class="desc-ritual">"A consulta com a Sacerdotisa Belayma mudou completamente minha perspectiva. A precisão nas respostas e a seriedade no atendimento são impressionantes. Recomendo de olhos fechados!"</p>
+              <button onclick="agendarItem(this)" class="btn-card">Falar no WhatsApp</button>
             </div>
 
-            <div class="card-depoimento">
+            <div class="card-ritual">
               <div class="card-icon">✦</div>
-              <p class="texto-depoimento">"Fiz o ritual de abertura de caminhos e em poucas semanas as oportunidades financeiras começaram a surgir de forma clara. Profissional ímpar e muito respeitosa."</p>
-              <p class="autor-depoimento">— R. L. (Curitiba - PR)</p>
+              <h3 class="nome-ritual">R. L.</h3>
+              <p class="tipo-ritual">Curitiba - PR</p>
+              <p class="desc-ritual">"Fiz o ritual de abertura de caminhos e em poucas semanas as oportunidades financeiras começaram a surgir de forma clara. Profissional ímpar e muito respeitosa."</p>
+              <button onclick="agendarItem(this)" class="btn-card">Falar no WhatsApp</button>
             </div>
 
-            <div class="card-depoimento">
+            <div class="card-ritual">
               <div class="card-icon">✦</div>
-              <p class="texto-depoimento">"O atendimento é de uma energia indescritível. Sigilo absoluto e muita firmeza nas orientações. Sou cliente fiel e sempre busco direcionamento aqui."</p>
-              <p class="autor-depoimento">— C. A. (Florianópolis - SC)</p>
+              <h3 class="nome-ritual">C. A.</h3>
+              <p class="tipo-ritual">Florianópolis - SC</p>
+              <p class="desc-ritual">"O atendimento é de uma energia indescritível. Sigilo absoluto e muita firmeza nas orientações. Sou cliente fiel e sempre busco direcionamento aqui."</p>
+              <button onclick="agendarItem(this)" class="btn-card">Falar no WhatsApp</button>
             </div>
 
           </div>
